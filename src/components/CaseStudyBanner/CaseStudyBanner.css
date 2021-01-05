@@ -1,0 +1,50 @@
+.casestudy__banner-container {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  white-space: pre-wrap;
+  justify-content: center;
+  align-items: center;
+ }
+
+.page-heading-primary {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width:1024px){
+    .page-heading-primary {
+        padding:0px 50px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .page-heading-primary {
+        font-size: 1.75rem;
+    }
+    .casestudy__banner-container{
+        height:225px
+    }
+}
+
+@media screen and (max-width:600px){
+    .page-heading-primary {
+        font-size: 1.5rem;
+    }
+    .casestudy__banner-container{
+        height:200px
+    }
+}
+
+@media screen and (max-width:400px){
+    .page-heading-primary {
+        font-size: 1.25rem;
+    }
+    .casestudy__banner-container{
+        height:175px
+    }
+}

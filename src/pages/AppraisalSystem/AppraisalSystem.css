@@ -1,0 +1,98 @@
+.appraisal__container{
+    margin-top:65px;
+}
+
+.casestudy-para{
+    max-width: 1300px;
+    margin: 20px auto;
+    padding:20px;
+}
+
+.casestudy-para-title h3{
+    font-weight: 600;
+}
+
+.casestudy-para-title:not(:first-child){
+    margin-top:35px;
+}
+
+.casestudy-para-desc{
+    line-height: 1.5;
+    margin-top:5px;
+}
+
+.casestudy-para-desc ul{
+    padding-left:25px;
+    margin-top:5px;
+}
+
+.timeline-item ul{
+    padding-left:25px;
+}
+
+.timeline-item {
+    padding: 2.3em 2em 2em;
+    position: relative;
+    color: #272727;
+    border-left: 2px solid #01579bcf;
+  }
+  .timeline-item p, li {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+
+  .timeline-item img{
+    margin-top:20px;
+    max-height: 475px;
+    max-width: 575px;
+  }
+  .wf__images img{
+      /* max-height: 600px; */
+      max-width: 800px;
+  }
+  .tl__images{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+
+  .timeline-item::before {
+    content: attr(process-title);
+    position: absolute;
+    left: 2em;
+    font-weight: 600;
+    top: 12px;
+    display: block;
+    font-size: 1rem;
+  }
+  .timeline-item::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -7px;
+    border-radius: 10px;
+    content: "";
+    border: 2px solid #01579bcf;
+    background: #01579b;
+  }
+
+  @media screen and (max-width:568px){
+    .timeline-item img{
+        max-width: 300px;
+    }
+  }
+
+  @media screen and (min-width: 569px) and (max-width:768px){
+    .wf__images img{
+        max-width: 500px;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width:870px){
+    .wf__images img{
+        max-width: 600px;
+    }
+  }

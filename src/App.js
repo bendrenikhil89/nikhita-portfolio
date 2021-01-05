@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Route, Switch} from 'react-router-dom';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import AppraisalSystem from './pages/AppraisalSystem/AppraisalSystem';
+import AutonomousVehicle from './pages/AutonomousVehicle/AutonomousVehicle';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="app__wrapper">
+        <Navbar />
+          <ScrollToTop />
+          <Route path="/" exact component={Dashboard} />
+          <Route path="/casestudy/appraisalsystem" exact component={AppraisalSystem} />
+          <Route path="/casestudy/autonomousvehicle" exact component={AutonomousVehicle} />
+      </div>
+      <Footer />
+    </>
   );
 }
 

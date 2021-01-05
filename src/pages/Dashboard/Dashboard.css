@@ -1,0 +1,12 @@
+.dashboard__container{
+    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),url("../../assets/images/Dashboard__BG.png") no-repeat top center;
+    background-size: cover;
+    min-height:100vh;
+    padding-top:65px;
+}
+
+@media screen and (max-width:768px){
+    .dashboard__container{
+        padding-top:95px;
+    }
+}

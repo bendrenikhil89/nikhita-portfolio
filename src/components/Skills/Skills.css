@@ -1,0 +1,128 @@
+.skills__container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 20px 20px 20px;
+    color:#fff;
+}
+
+.skills__container h2{
+    margin-top:10px;
+    color:#212121;
+    background: linear-gradient(270deg,#01579b, #01579b) no-repeat left bottom/50px 3.5px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+  .cards{
+    max-width: 1300px;
+    margin:25px auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    list-style: none;
+  }
+
+  .card_image{
+    text-align: center;
+    padding: 20px;
+  }
+
+  .card_image img{
+    width: 215px;
+    height: 150px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card_content {
+    padding: 1rem;
+    background: #01579b;
+    line-height: 2;
+  }
+  
+  .card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+  
+  .card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }
+  .made_by{
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  @media screen and (max-width:568px){
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills__container{
+      margin: 70px auto 0px auto;
+      padding:20px;
+  }
+}
+
+  
+@media screen and (min-width:800px) and (max-width:1000px){
+    .cards{
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    }
+}
+
+@media screen and (min-width:1001px) and (max-width:1240px){
+    .cards{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width:1365px){
+    .cards{
+        margin:25px 0px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .skills__container{
+        /* margin: 70px auto 0px auto; */
+        padding:20px;
+    }
+    .cards:first-child{
+        margin:0;
+        margin-top:25px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:768px){
+  .col-image{
+    padding:0px 20px;
+  }
+} 
+
+@media screen and (max-width:400px){
+  .col-image img{
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .col-image img {
+      max-width: 200px;
+  }
+}
