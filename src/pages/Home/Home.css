@@ -1,47 +1,50 @@
+/* .home__container{
+    position: relative;
+    background: url("../../assets/images/Site_Background.jpg") no-repeat top;
+    background-size: cover;
+    position: relative;
+}
+
 .home__about{
     display: flex;
-    max-width: 1300px;
+    max-width: 1200px;
     margin:0 auto;
     align-items: center;
-    margin-top:60px;
+    margin-top:150px;
     z-index: 2;
 }
 
 .home__about-text{
     flex:1.5;
     padding:0px 20px;
-    margin-top:90px;
 }
 
 .home__about-image{
     flex:1;
     padding: 0px 20px;
-    margin-top:90px;
 }
 
 .home__about-image-container{
     background: url("../../assets/images/Nikhita_BG_BG.jpg") center;
     background-size: cover;
-    height: 750px;
+    height: 600px;
     border-radius: 30px;
     position: relative;
-    box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);
 }
 
 .home__about-image-profile{
     background: url("../../assets/images/IMG_5515.JPG") center;
     background-size: cover;
-    height: 750px;
+    height: 600px;
     border-radius: 30px;
     position: absolute;
     top:-30px;
     right:30px;
     width: calc(100% - 0px);
-    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
 }
 
 .home__about-text h1{
-    font-size: 3rem;
+    font-size: 48px;
     margin-bottom: 20px;
     
 }
@@ -102,20 +105,12 @@
 @media screen and (max-width:768px){
     .home__about{
         flex-direction: column-reverse;
-        margin-top:0px;
+        margin-top:120px;
     }
 
     .home__about-image, .home__about-text{
         width:100%;
         padding: 20px;
-    }
-
-    .home__about-image{
-      margin-top: 55px;
-    }
-
-    .home__about-text{
-      margin-top:15px;
     }
 
     .home__about-image-profile{
@@ -131,3 +126,4 @@
         width: 100%;
     }
 }
+   */

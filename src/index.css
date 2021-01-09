@@ -2,12 +2,12 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 html{
   font-size: calc(14.25px + .1vw); /* Responsive base font size */
-  color:#272727;
+  color:#2d3958;
 }
 
 #root{
@@ -17,5 +17,6 @@ html{
 }
 
 .app__wrapper{
-	flex-grow: 1;
+  flex-grow: 1;
+  z-index:2;
 }

@@ -1,4 +1,4 @@
-.skills__container{
+/* .skills__container{
     max-width: 1300px;
     margin: 0 auto;
     padding: 0px 20px 20px 20px;
@@ -6,7 +6,7 @@
 }
 
 .skills__container h2{
-    margin-top:10px;
+    margin-top:20px;
     color:#212121;
     background: linear-gradient(270deg,#01579b, #01579b) no-repeat left bottom/50px 3.5px;
     padding-bottom: 15px;
@@ -100,7 +100,6 @@
 
 @media screen and (max-width:768px){
     .skills__container{
-        /* margin: 70px auto 0px auto; */
         padding:20px;
     }
     .cards:first-child{
@@ -125,4 +124,4 @@
   .col-image img {
       max-width: 200px;
   }
-}
+} */

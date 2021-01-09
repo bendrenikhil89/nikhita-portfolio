@@ -1,13 +1,21 @@
 .footer__wrapper{
     width: 100%;
-    background: #272727;
+    background: aliceblue;
+    margin-top:40px;
+    display: flex;
+    height:100%;
 }
 
 .footer__container{
     max-width: 1300px;
     margin: 0 auto;
     padding: 15px 5px;
-    color:#fff;
     text-align: center;
     font-size: 14px;
+}
+
+@media screen and (max-width:768px){
+    .footer__wrapper{
+        margin-top:0px;
+    }
 }

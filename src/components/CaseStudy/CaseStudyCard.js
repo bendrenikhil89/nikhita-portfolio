@@ -3,10 +3,11 @@ import './CaseStudy.css'
 
 import {Link} from 'react-router-dom';
 
-const CaseStudyCard = ({src, title, desc, pathTo, alignmentClass}) => {
+
+const CaseStudyCard = ({src, title, desc, pathTo, alignmentClass, imgClass}) => {
     return (
         <div className="grid-flex">
-            <div className="col col-image">
+            <div className={imgClass}>
                 <img src={src} />
             </div>
             <div className={alignmentClass}>
