@@ -1,98 +1,210 @@
-.appraisal__container{
-    margin-top:65px;
+.cs__background{
+  background: url("../../assets/images/Site_Background.jpg") no-repeat top;
 }
 
-.casestudy-para{
-    max-width: 1300px;
-    margin: 20px auto;
-    padding:20px;
+.cs__container{
+    max-width: 1200px;
+    margin: 60px auto 20px auto;
 }
 
-.casestudy-para-title h3{
-    font-weight: 600;
+.cs__container h1{
+  text-align: center;
+  padding-top:30px;
 }
 
-.casestudy-para-title:not(:first-child){
-    margin-top:35px;
+.cs__header-title img{
+  margin-left:10px;
 }
 
-.casestudy-para-desc{
-    line-height: 1.5;
-    margin-top:5px;
+.appraisal__header-photo{
+  background: url("../../assets/images/casestudies-dashboard/AppraisalSystem.png") no-repeat top;
+  max-height:auto;
+  height:50vh;
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  background-position: center center;
+  margin-top:30px;
 }
 
-.casestudy-para-desc ul{
-    padding-left:25px;
-    margin-top:5px;
+.cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess{
+  margin-top: 80px;
+  padding: 25px 200px;
+  border-radius: 10px;
+  line-height: 1.5;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
 }
 
-.timeline-item ul{
-    padding-left:25px;
+.cs__problemstatement{
+  margin-top:60px;
 }
 
-.timeline-item {
-    padding: 2.3em 2em 2em;
-    position: relative;
-    color: #272727;
-    border-left: 2px solid #01579bcf;
-  }
-  .timeline-item p, li {
-    font-size: 1rem;
-    line-height: 1.5;
-    font-size: 0.95rem;
-  }
+.cs__overview h3, .cs__userresearch h3, .cs__problemstatement h3, .cs__redesignprocess h3{
+  text-align: center;
+}
 
-  .timeline-item img{
-    margin-top:20px;
-    max-height: 475px;
-    max-width: 575px;
-  }
-  .wf__images img{
-      /* max-height: 600px; */
-      max-width: 800px;
-  }
-  .tl__images{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-  }
+.cs__overview img, .cs__userresearch img, .cs__problemstatement img, .cs__redesignprocess img{
+  margin-left:10px;
+}
 
-  .timeline-item::before {
-    content: attr(process-title);
-    position: absolute;
-    left: 2em;
-    font-weight: 600;
-    top: 12px;
-    display: block;
-    font-size: 1rem;
-  }
-  .timeline-item::after {
-    width: 10px;
-    height: 10px;
-    display: block;
-    top: 1em;
-    position: absolute;
-    left: -7px;
-    border-radius: 10px;
-    content: "";
-    border: 2px solid #01579bcf;
-    background: #01579b;
-  }
+.cs__overview p, .cs__userresearch p, .cs__problemstatement p, .cs__redesignprocess p{
+  margin-top:25px;
+}
 
-  @media screen and (max-width:568px){
-    .timeline-item img{
-        max-width: 300px;
+.appraisal__role{
+  background: #bbd4f2;
+  display: flex;
+  margin-top:60px;
+  border-radius: 10px;
+  padding: 40px 150px;
+  color:#fff;
+  font-weight: 600;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+}
+
+.cs__role, .cs__res, .cs__duration{
+  flex:1;
+  padding: 0px 10px;
+}
+
+.cs__role div:first-of-type, .cs__res div:first-of-type, .cs__duration div:first-of-type{
+  margin-bottom: 20px;
+}
+
+.cs__role img:first-of-type, .cs__res img:first-of-type, .cs__duration img{
+  margin-left:10px;
+}
+
+.cs__res ul{
+  margin-left:25px;
+}
+
+.cs__usercomments{
+  display: flex;
+  margin: 0 auto;
+  margin-top:60px;
+  height: 72px;
+}
+
+.cs__useravatar{
+  flex:1;
+}
+
+.cs__useravatar img{
+  height:72px;
+  width:auto;
+  border-radius: 50%;
+  margin-left: 0px;
+}
+
+.cs__usercomment{
+  flex:6;
+  display: flex;
+  align-items: center;
+  color:#68728a;
+  padding-left: 30px;
+  border-left: 4px solid #3c85db4f;
+}
+
+.cs__usercomments2{
+  flex-direction: row-reverse;
+}
+
+.cs__usercomment2{
+  padding-left:0px;
+  padding-right: 30px;
+  border-left: 0;
+  border-right: 4px solid #3c85db4f;
+}
+
+.cs__useravatar2{
+    justify-content: flex-end;
+    display: flex;
+}
+
+.cs__personaText{
+  margin-top:60px !important;
+}
+
+.cs__personaSlider{
+  margin-top:20px;
+}
+
+.cs__personaSlider img{
+  margin-left:0px !important;
+}
+
+.cs__cardsorting img{
+  margin-left:0px !important;
+}
+
+.cs__redesignprocess img{
+  margin-top:20px;
+  border-radius: 10px;
+}
+
+
+  @media screen and (min-width:1025px) and (max-width:1366px){
+    .cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess{
+      padding: 30px 150px;
     }
   }
 
-  @media screen and (min-width: 569px) and (max-width:768px){
-    .wf__images img{
-        max-width: 500px;
+  @media screen and (max-width:1250px){
+    .cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess, .appraisal__role{
+      margin: 60px 20px;
+    }
+
+    .appraisal__header-photo{
+      margin: 30px 20px;
+    }
+
+    .appraisal__header-photo{
+      width:auto;
+    }
+
+    .appraisal__role{
+      padding: 20px 20px;
     }
   }
 
-  @media screen and (min-width: 769px) and (max-width:870px){
-    .wf__images img{
-        max-width: 600px;
+  @media screen and (max-width:1100px){
+    .cs__role, .cs__res, .cs__duration {
+      flex: 1 1;
+      padding: 20px 0px;
+    }
+  }
+
+  @media screen and (min-width:901px) and (max-width:1024px){
+    .cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess{
+      padding: 20px 100px;
+    }
+  }
+
+  @media screen and (min-width:801px) and (max-width:900px){
+    .cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess{
+      padding: 20px 50px;
+    }
+  }
+
+  @media screen and (max-width:800px){
+    .cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess{
+      padding: 20px;
+    }
+
+    .cs__usercomment{
+      border:0;
+    }
+
+    .cs__cardsorting img{
+      margin-left: 0 !important;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width:767px){
+    .appraisal__role{
+      flex-direction: column;
     }
   }

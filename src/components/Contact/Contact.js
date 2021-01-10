@@ -88,13 +88,14 @@ const Contact = () => {
                 </div>
                 <div className="contact__contact-details">
                     <h3>Get in Touch</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis mollitia inventore?</p>
+                    <p>Do you have any questions?</p>
+                    <p>Please feel free to drop me an email by filling out the send message form and I will respond to your email as soon as possible.</p>
                     <div className="contact__metadata">
                         <p><i className="fas fa-map-marker-alt"></i>E-302, Poorva Residency, Pimple Saudagar, Pune</p>
                         <p><i className="fas fa-phone"></i>+91 98907 46428</p>
                     </div>
                     <div className="social-buttons">
-                        <a href="https://www.linkedin.com/in/nikhil-bendre-529939104/" className="social-margin" target="blank">
+                        <a href="https://www.linkedin.com/in/nikhita-joshi-13302719/" className="social-margin" target="blank">
                         <div className="social-icon linkedin">
                             <i className="fab fa-linkedin-in" aria-hidden="true"></i>
                         </div> 

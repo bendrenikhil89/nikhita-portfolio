@@ -99,6 +99,12 @@
     color: #0a66c2;
   }
 
+@media screen and (max-width:1366px){
+  .home__about-image-container, .home__about-image-profile{
+    height:650px
+  }
+}
+
 @media screen and (max-width:768px){
     .home__about{
         flex-direction: column-reverse;

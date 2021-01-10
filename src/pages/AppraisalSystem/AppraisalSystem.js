@@ -1,156 +1,132 @@
-// import React from 'react';
-// import './AppraisalSystem.css';
+import React from 'react';
+import './AppraisalSystem.css';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-// import CaseStudyBanner from '../../components/CaseStudyBanner/CaseStudyBanner';
+import DashAppraisal from '../../assets/svgs/DashAppraisal.svg';
+import User1 from '../../assets/images/AppraisalSystem/User1.jpg';
+import User2 from '../../assets/images/AppraisalSystem/User2.jpg';
+import User3 from '../../assets/images/AppraisalSystem/User3.jpg';
+import Appraisee from '../../assets/images/AppraisalSystem/AppraiseePersona.png';
+import Appraiser from '../../assets/images/AppraisalSystem/AppraiserPersona.png';
+import Reviewer from '../../assets/images/AppraisalSystem/ReviewerPersona.png';
+import AppraisalCardSorting from '../../assets/images/AppraisalSystem/AppraisalCardSorting.jpg'
 
-// import Personas1 from '../../assets/images/AppraisalSystem/Group 47.jpg';
-// import Personas2 from '../../assets/images/AppraisalSystem/Group 83.jpg';
-// import Personas3 from '../../assets/images/AppraisalSystem/Group 85.jpg';
-// import CardSorting from '../../assets/images/AppraisalSystem/4.jpg';
-// import Appraisee from '../../assets/images/AppraisalSystem/Appraisee.svg';
-// import Appraiser from '../../assets/images/AppraisalSystem/Appraiser.svg';
-// import Reviewer from '../../assets/images/AppraisalSystem/Reviewer.svg';
-// import PP1 from '../../assets/images/AppraisalSystem/PP1.jpg';
-// import PP2 from '../../assets/images/AppraisalSystem/PP2.jpg';
-// import PP3 from '../../assets/images/AppraisalSystem/PP3.jpg';
-// import PP4 from '../../assets/images/AppraisalSystem/PP4.jpg';
-// import WF1 from '../../assets/images/AppraisalSystem/WF1.png';
-// import WF2 from '../../assets/images/AppraisalSystem/WF2.png';
-// import WF3 from '../../assets/images/AppraisalSystem/WF3.png';
-// import WF4 from '../../assets/images/AppraisalSystem/WF4.png';
+const AppraisalSystem = () => {
+    const arrowStyles= {
+        position: 'absolute',
+        zIndex: 2,
+        top: 'calc(50% - 15px)',
+        width: 30,
+        height: 30,
+        cursor: 'pointer',
+        textAlign: 'end',
+        fontSize: '24px',
+        color: '#2d3948'
+    };
 
-// const AppraisalSystem = () => {
-//     return (
-//         <div className="appraisal__container">
-//             <CaseStudyBanner title="Appraisal System Revamping" src="" />
-//             <div className="casestudy-para">
-//                 <div className="casestudy-para-title">
-//                     <h3>Purpose</h3>
-//                 </div>
-//                 <div className="casestudy-para-desc">
-//                     <p>Employees and Managers need to prepare data for appraisals, set goals and evaluate them The appraisal tool should ease their work by providing easy user interface, highlighting important tasks and guiding the users about the task allocated to them.</p>
-//                 </div>
+    return (
+        <div className="cs__background">
+        <div className="cs__container">
+            <div className="cs__header-title">
+                <h1>Appraisal System Revamping <img src={DashAppraisal} /></h1>
+            </div>
 
-//                 <div className="casestudy-para-title">
-//                     <h3>Impact</h3>
-//                 </div>
-//                 <div className="casestudy-para-desc">
-//                     <p>The revamping of the appraisal system helped employee and managers in much positive way. Employee now have a clarity on their goals and evaluation throughout the year. Manager can keep tracking of their employee’s progress without manually following up. The appraisals became such an easy and quick things for all the employee and managers, that they started spending the save time on their work and productivity increased.</p>
-//                 </div>
+            <div className="appraisal__header-photo"></div>
 
-//                 <div className="casestudy-para-title">
-//                     <h3>My Role and Responsibilities</h3>
-//                 </div>
-//                 <div className="casestudy-para-desc">
-//                     <p>I joined this revamping project from the scratch as a UX designer. I was involved in:</p>
-//                     <ul>
-//                         <li>Designing the entire application contributing from user research to conception, visualization and testing</li>
-//                         <li>Leading and managing the project design team. I worked with one fellow UX designer, one Visual Designer and one HTML developer.</li>
-//                         <li>Monitoring the delivery of UX artifacts and Review of Visual Designs and HTMLs</li>
-//                     </ul>
-//                 </div>
+            <div className="cs__overview">
+                <h3>Overview <img src={DashAppraisal} /></h3>
+                <p>Employees and Managers have to fill data for appraisals, set goals and evaluate them. The appraisal tool should ease their work by providing an user intuitive navigation, highlight important tasks by providing notification badges and providing a mechanism to help users track their goals.</p>
+            </div>
 
-//                 <div className="casestudy-para-title">
-//                     <h3>Project Duration</h3>
-//                 </div>
-//                 <div className="casestudy-para-desc">
-//                     <p>8 months</p>
-//                 </div>
+            <div className="appraisal__role">
+                <div className="cs__duration">
+                    <div>DURATION <img src={DashAppraisal} /></div>
+                    <div>5 Months</div>
+                </div>
+                <div className="cs__role">
+                    <div>ROLE <img src={DashAppraisal} /></div>
+                    <div>UX Designer & Team Lead</div>
+                </div>
+                <div className="cs__res">
+                    <div>RESPONSIBILITIES <img src={DashAppraisal} /></div>
+                    <div>
+                        <ul>
+                            <li>Conduct User Research</li>
+                            <li>Ideate and Prototype</li>
+                            <li>Manage / review UX & VD team deliverables</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-//                 <div className="casestudy-para-title">
-//                     <h3>Problem Statement</h3>
-//                 </div>
-//                 <div className="casestudy-para-desc">
-//                     <p>The Company’s employees and managers face a problem while filling details in the appraisal form in the current application. The users are lost in the application because of unnecessary functionalities and necessary ones are missed because of too much data. An ideal solution would be having an application that guides the user to the important functionalities and helps the user to complete the appraisal process easily.</p>
-//                 </div>
+            <div className="cs__problemstatement">
+                <h3>Problem Statement <img src={DashAppraisal} /></h3>
+                <p>The users were facing a problem in filling data in the current application. The users were overwhelmed because of complex & unnecessary functionalities and missing out on the necessary ones. An ideal solution would be to have an application that would show important functionalities upfront thus easing the entire appraisal process.</p>
+            </div>
 
-//                 <div className="casestudy-para-title">
-//                     <h3>Process Followed</h3>
-//                 </div>
+            <div className="cs__userresearch">
+                <h3>User Research <img src={DashAppraisal} /></h3>
+                <p>After initial rounds of discussion with the stakeholders, target users were identified. User interviews were planned for which a few questions were created to understand the shortcomings of the current application. Furthermore, "how might we..." questions were also created to help us better understand the user's task and goal.</p>
+                <div className="cs__usercomments">
+                    <div className="cs__useravatar cs__useravatar1"><img src={User1} /></div>
+                    <div className="cs__usercomment cs__usercomment1">"I would like to track progress of goals assigned to me!"</div>
+                </div>
+                <div className="cs__usercomments cs__usercomments2">
+                    <div className="cs__useravatar cs__useravatar2"><img src={User2} /></div>
+                    <div className="cs__usercomment cs__usercomment2">"I would like to keep myself abreast with my peer's goals and progress to keep myself motivated!"</div>
+                </div>
+                <div className="cs__usercomments">
+                    <div className="cs__useravatar cs__useravatar3"><img src={User3} /></div>
+                    <div className="cs__usercomment cs__usercomment3">"As a manager, I would like to have a dashboard view which would list my reportees' goals and progress!"</div>
+                </div>
+                <p className="cs__personaText">Based on the above user research, 3 personas were finalized and created.</p>
 
-//                 <div className="timeline-item" process-title='Identifying the target users'>
-//                     <p>After initial rounds of discussions with the stakehoder, target users were identified.</p>
-//                 </div>
-                
-//                 <div className="timeline-item" process-title='User Interviews'>
-//                     <ul>
-//                         <li>Created few list of questions to understand the problem with the current applications. Pain points were Identified.</li>
-//                         <li>Created few list of “how might we...” questions to help us better understand users task and goal.</li>
-//                     </ul>
-//                     <p style={{marginTop:'10px'}}>Few Insights which we got from the user Interviews are:</p>
-//                     <ul>
-//                         <li>The users were interested in tracking their goal process.</li>
-//                         <li>They wanted to see an overview of their peer's goals to keep them motivated.</li>
-//                         <li>Managers/Appraisers were interested to have a dashboard where they can track the progress of their reporting appraisee.</li>
-//                     </ul>
-//                 </div>
-                
-//                 <div className="timeline-item" process-title='Creating Personas'>
-//                     <p>3 personas were finalized and created</p>
-//                     <ul>
-//                         <li>Appraisee</li>
-//                         <li>Appraisers</li>
-//                         <li>Reviewers</li>
-//                     </ul>
-//                     <div className="tl__images">
-//                         <div><img src={Personas1}/></div>
-//                         <div><img src={Personas2}/></div>
-//                         <div><img src={Personas3}/></div>
-                        
-//                     </div>
-//                 </div>
+                <div className="cs__personaSlider">
+                    <Carousel 
+                        showArrows={true} 
+                        showThumbs={false} 
+                        showIndicators={false}
+                        renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                            hasPrev && (
+                                <span onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 0, textAlign:'left' }}>
+                                    <i className="fas fa-chevron-left"></i>
+                                </span>
+                            )
+                        }
+                        renderArrowNext={(onClickHandler, hasNext, label) =>
+                            hasNext && (
+                                <span onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 0, textAlign:'right' }}>
+                                    <i className="fas fa-chevron-right"></i>
+                                </span>
+                            )
+                        }
+                    >
+                        <div>
+                            <img src={Appraisee} />
+                        </div>
+                        <div>
+                            <img src={Appraiser} />
+                        </div>
+                        <div>
+                            <img src={Reviewer} />
+                        </div>
+                    </Carousel>
+                </div>
+            </div>
 
-//                 <div className="timeline-item" process-title='Redesign Process'>
-//                     <p>After getting inputs from the target users, card sorting activity was done in order to determine which functionalities should stay and which should go.</p>
-//                     <div className="tl__images">
-//                         <div><img src={CardSorting}/></div>
-//                     </div>
-//                     <p>After conducting card sorting activities with the users, few functionalities like My Progress overview, peer progress and team progess were included.</p>
-//                 </div>
+            <div className="cs__redesignprocess">
+                <h3>Redesign Process <img src={DashAppraisal} /></h3>
+                <p>After getting inputs from the target users, a card sorting activity was done in order to determine which functionalities should be kept and which should removed.</p>
+                <div className="cs__cardsorting">
+                    <img src={AppraisalCardSorting} />
+                </div>
+                <p>After conducting card sorting activities with the users, few functionalities like My Progress overview, peer progress and team progress were included.</p>
+            </div>
 
-//                 <div className="timeline-item" process-title='Finalizing Information Architecture'>
-//                     <p style={{marginTop:'20px'}}>Appraisee</p>
-//                     <div className="tl__images wf__images">
-//                     <div><img src={Appraisee}/></div>
-//                     </div>
+        </div>
+        </div>
+    )
+}
 
-//                     <p style={{marginTop:'20px'}}>Appraiser</p>
-//                     <div className="tl__images wf__images">
-//                         <div><img src={Appraiser}/></div>
-//                     </div>
-
-//                     <p style={{marginTop:'20px'}}>Reviewer</p>
-//                     <div className="tl__images wf__images">
-//                         <div><img src={Reviewer}/></div>
-//                     </div>
-//                 </div>
-
-//                 <div className="timeline-item" process-title='Creating Paper Prototypes'>
-//                     <div className="tl__images">
-//                         <div><img src={PP1}/></div>
-//                         <div><img src={PP2}/></div>
-//                         <div><img src={PP3}/></div>
-//                         <div><img src={PP4}/></div>
-//                     </div>
-//                 </div>
-
-//                 <div className="timeline-item" process-title='Creating Wireframes'>
-//                     <div className="tl__images wf__images">
-//                         <div><img src={WF1}/></div>
-//                         <div><img src={WF2}/></div>
-//                         <div><img src={WF3}/></div>
-//                         <div><img src={WF4}/></div>
-//                     </div>
-//                 </div>
-
-//                 <div className="timeline-item" process-title='Conducting Usability Testing in the usability lab with all proper softwares and equipments'>
-//                     <p>As reaching to the users was easy, we conducted usability testing the usability lab. All the major use cases were considered. As part of the study, it was observed that users were able to identify and update their goals.</p>
-//                     <p>Based on the user feedbacks, more details were added to peer goals overview section. Also for appraiser view, more goal details were added to the landing screen.</p>
-//                 </div>
-
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default AppraisalSystem;
+export default AppraisalSystem;
