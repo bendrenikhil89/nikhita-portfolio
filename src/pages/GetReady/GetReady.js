@@ -22,8 +22,8 @@ import WireFrame3 from '../../assets/images/GetReady/WF3.png';
 import WireFrame4 from '../../assets/images/GetReady/WF4.png';
 
 import VD1 from '../../assets/images/GetReady/VD1.png';
-import VD2 from '../../assets/images/GetReady/VD2.png';
-import VD3 from '../../assets/images/GetReady/VD3.png';
+import VD2 from '../../assets/images/GetReady/VD3.png';
+import VD3 from '../../assets/images/GetReady/VD2.png';
 import VD4 from '../../assets/images/GetReady/VD4.png';
 
 import waySideHeader from '../../assets/images/casestudies-dashboard/WaysideTrans.png';

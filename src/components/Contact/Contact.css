@@ -1,5 +1,5 @@
 .contact-form{
-    margin: 60px auto 20px auto;
+    margin: 90px auto 20px auto;
     width:100%;
     /* background: url("../../assets/images/Site_Background.jpg") no-repeat bottom; */
 }
@@ -26,6 +26,7 @@
     padding-bottom: 10px;
     font-weight: 600;
     color:#002f70;
+    font-size: 1.75rem;
 }
 
 .contact__container h3{
@@ -64,7 +65,7 @@
 
 .contact__metadata .fas{
     padding-right: 10px;
-    color:#0563bb;
+    color:#3080ec;
     width: 30px;
     justify-content: center;
     text-align: center;
@@ -98,13 +99,14 @@
 
 
   .contact__send-message {
-    background: #0a66c2;
+    background: #3080ec;
     padding: 10px 22px;
     color: white;
     border-radius: 5rem;
     font-size: 15px;
     border: none;
     cursor: pointer;
+    width: 150px;
   }
 
   .contact__send-message:hover{

@@ -49,8 +49,9 @@ const Contact = () => {
             .then((result) => {
                 setSubmitting(false);
                 document.querySelectorAll("#name, #email, #subject, #message").forEach(x => x.value="");
-                toast.success("Your email has been received!");
+                toast.success("Your email is sent successfully to Nikhita!");
             }, (error) => {
+                setSubmitting(false);
                 toast.success(`Something went wrong! ${error.text}`);
             });
         }
@@ -83,7 +84,7 @@ const Contact = () => {
                         {error && error.message ? <span className="contact__validation-error">* Message required</span> : null}
                     </div>
                     <div className="contact__submit">
-                        <input type="submit" className="contact__send-message" value="Send Message" />
+                        {submitting ? <input type="submit" disabled style={{background:'#96baea'}} className="contact__send-message" value="Sending" /> : <input type="submit" className="contact__send-message" value="Send Message" /> }
                     </div>
                 </div>
                 <div className="contact__contact-details">

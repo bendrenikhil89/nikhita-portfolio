@@ -26,6 +26,12 @@ import WireFrame3 from '../../assets/images/AppraisalSystem/AppraisalWF3.png';
 import WireFrame4 from '../../assets/images/AppraisalSystem/AppraisalWF4.png';
 import WireFrame5 from '../../assets/images/AppraisalSystem/AppraisalWF5.png';
 import WireFrame6 from '../../assets/images/AppraisalSystem/AppraisalWF6.png';
+import VD1 from '../../assets/images/AppraisalSystem/VD1.png';
+import VD2 from '../../assets/images/AppraisalSystem/VD3.png';
+import VD3 from '../../assets/images/AppraisalSystem/VD2.png';
+import VD4 from '../../assets/images/AppraisalSystem/VD4.png';
+import VD5 from '../../assets/images/AppraisalSystem/VD5.png';
+import VD6 from '../../assets/images/AppraisalSystem/VD6.png';
 
 import waySideHeader from '../../assets/images/casestudies-dashboard/WaysideTrans.png';
 import getReady from '../../assets/images/casestudies-dashboard/GetReady.png';
@@ -175,6 +181,20 @@ const AppraisalSystem = () => {
                     <div className="cs__pp4"><img src={WireFrame4} /></div>
                     <div className="cs__pp4"><img src={WireFrame5} /></div>
                     <div className="cs__pp4"><img src={WireFrame6} /></div>
+                </div>
+            </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__wireframes">
+                <h3>Visual Design <img src={DashAppraisal} /></h3>
+                <div className="cs__wireframecontainer">
+                    <div className="cs__pp1"><img src={VD1} /></div>
+                    <div className="cs__pp2"><img src={VD2} /></div>
+                    <div className="cs__pp3"><img src={VD3} /></div>
+                    <div className="cs__pp4"><img src={VD4} /></div>
+                    <div className="cs__pp4"><img src={VD5} /></div>
+                    <div className="cs__pp4"><img src={VD6} /></div>
                 </div>
             </div>
             </ScrollAnimation>

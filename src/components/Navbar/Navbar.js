@@ -3,8 +3,8 @@ import {Link, useLocation} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
 import * as Scroll from 'react-scroll';
 import useWindowDimensions from '../../Hooks/useWindowDimensions';
-import siteLogo from '../../assets/svgs/NJ.svg';
-
+// import siteLogo from '../../assets/svgs/Logo.svg';
+import siteLogo from '../../assets/images/Logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -30,6 +30,11 @@ const Navbar = () => {
         }
     });
 
+    let contactOffset = -45;
+    if(width > 768 && width <= 1366){
+        contactOffset = -60;
+    }
+
     const navbarHandler = () => {
         setClick(click => !click);
     }
@@ -47,7 +52,7 @@ const Navbar = () => {
         <div className={scrollClass !== '' ? 'navbar__wrapper':'navbar__wrapped-hidden'}>
         <header className={`main-header ${scrollClass}`}>
             <div className="logo">
-                {location === "/" ? <Element onClick={() => scroll.scrollToTop()} duration={1000}><img src={siteLogo} /></Element> : <Link to="/"><img src={siteLogo} /></Link>}
+                {location === "/" ? <Element style={{display:'flex'}} onClick={() => scroll.scrollToTop()} duration={1000}><img src={siteLogo} /></Element> : <Link to="/"><img src={siteLogo} /></Link>}
             </div>
         
             <input type="checkbox" className="menu-btn" id="menu-btn" />
@@ -57,13 +62,13 @@ const Navbar = () => {
         
             <ul className="nav-links">
                 <li className="nav-link">
-                    {location === "/" ? <Element onClick={() => scroll.scrollToTop()} duration={1000}><a href="#">Home</a></Element> : <Link to="/"><a href="#">Home</a></Link>}
+                    {location === "/" ? <Element onClick={() => scroll.scrollToTop()} duration={1000}><a href="#">Home</a></Element> : <Link to="/">Home</Link>}
                 </li>
                 <li className="nav-link nav-link-casestudies">
                     {location === "/" ? <LinkS to="casestudies" spy={true} smooth={true} duration={1000} offset={-45} onClick={() => setClick(false)}>Case Studies</LinkS> : <Link to="/#casestudies" onClick={() => setClick(false)}>Case Studies</Link>}
                 </li>
                 <li className="nav-link">
-                    {location === "/" ? <LinkS to="contact" spy={true} smooth={true} duration={1000} offset={-45} onClick={() => setClick(false)}>Contact</LinkS> : <Link to="/#contact" onClick={() => setClick(false)}>Contact</Link>}
+                    {location === "/" ? <LinkS to="contact" spy={true} smooth={true} duration={1000} offset={contactOffset} onClick={() => setClick(false)}>Contact</LinkS> : <Link to="/#contact" onClick={() => setClick(false)}>Contact</Link>}
                 </li>
             </ul>
       </header>

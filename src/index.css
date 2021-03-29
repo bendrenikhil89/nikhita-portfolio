@@ -20,3 +20,33 @@ html{
   flex-grow: 1;
   z-index:2;
 }
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3080ec #f8f8f8;
+}
+
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3080ec;
+  border-radius: 20px;
+}
+
+.fa-chevron-circle-up{
+  color:#3080ec;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.fa-chevron-circle-up.chevron-dark{
+  color:#fff;
+}

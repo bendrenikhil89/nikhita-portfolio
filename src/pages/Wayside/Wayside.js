@@ -23,12 +23,19 @@ import PaperPrototype1 from '../../assets/images/Wayside/WaysidePaperPrototype.p
 import styleGuide1 from '../../assets/images/Wayside/Styleguide1.png';
 import styleGuide2 from '../../assets/images/Wayside/Styleguide2.png';
 
-import WireFrame1 from '../../assets/images/AppraisalSystem/AppraisalWF1.png';
-import WireFrame2 from '../../assets/images/AppraisalSystem/AppraisalWF2.png';
-import WireFrame3 from '../../assets/images/AppraisalSystem/AppraisalWF3.png';
-import WireFrame4 from '../../assets/images/AppraisalSystem/AppraisalWF4.png';
-import WireFrame5 from '../../assets/images/AppraisalSystem/AppraisalWF5.png';
-import WireFrame6 from '../../assets/images/AppraisalSystem/AppraisalWF6.png';
+import WireFrame1 from '../../assets/images/Wayside/WF1.png';
+import WireFrame2 from '../../assets/images/Wayside/WF2.png';
+import WireFrame3 from '../../assets/images/Wayside/WF3.png';
+import WireFrame4 from '../../assets/images/Wayside/WF4.png';
+import WireFrame5 from '../../assets/images/Wayside/WF5.png';
+import WireFrame6 from '../../assets/images/Wayside/WF6.png';
+
+import VD1 from '../../assets/images/Wayside/VD1.png';
+import VD2 from '../../assets/images/Wayside/VD2.png';
+import VD3 from '../../assets/images/Wayside/VD3.png';
+import VD4 from '../../assets/images/Wayside/VD4.png';
+import VD5 from '../../assets/images/Wayside/VD5.png';
+import VD6 from '../../assets/images/Wayside/VD6.png';
 
 import getReady from '../../assets/images/casestudies-dashboard/GetReady.png';
 import appraisalHeader from '../../assets/images/casestudies-dashboard/AppraisalSystemTrans.png';
@@ -176,13 +183,27 @@ const Wayside = () => {
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__wireframes">
                 <h3>Wireframes <img src={DashAppraisal} /></h3>
-                <div className="cs__wireframecontainer">
+                <div className="cs__wireframecontainer wayside">
                     <div className="cs__pp1"><img src={WireFrame1} /></div>
                     <div className="cs__pp2"><img src={WireFrame2} /></div>
                     <div className="cs__pp3"><img src={WireFrame3} /></div>
                     <div className="cs__pp4"><img src={WireFrame4} /></div>
                     <div className="cs__pp4"><img src={WireFrame5} /></div>
                     <div className="cs__pp4"><img src={WireFrame6} /></div>
+                </div>
+            </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__wireframes">
+                <h3>Visual Design <img src={DashAppraisal} /></h3>
+                <div className="cs__wireframecontainer wayside">
+                    <div className="cs__pp1"><img src={VD1} /></div>
+                    <div className="cs__pp2"><img src={VD2} /></div>
+                    <div className="cs__pp3"><img src={VD3} /></div>
+                    <div className="cs__pp4"><img src={VD4} /></div>
+                    <div className="cs__pp4"><img src={VD5} /></div>
+                    <div className="cs__pp4"><img src={VD6} /></div>
                 </div>
             </div>
             </ScrollAnimation>
