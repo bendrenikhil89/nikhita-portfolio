@@ -80,19 +80,52 @@
 .Aligner-item p{
     line-height: 1.5;
     margin:5px 0px 30px 0px;
+    color:rgba(0, 0, 0, 0.54)
+}
+
+.Aligner-item h3{
+  font-size: 1.5rem;
+  color:#232b32;
 }
 
 .Aligner-item a{
     text-decoration: none;
     padding: 10px 16px;
-    background: linear-gradient(to right, #7cb5e8, #0563bb);
     border-radius: 35px;
     font-size: 0.85rem;
-    color:#fff;
+    color: #232b32;
 }
 
-.Aligner-item a:hover{
-  background: linear-gradient(to right, #88c6ff, #206cb4);
+.cs__btn-blue{
+  background: #b7dcf4;
+}
+
+.cs__btn-blue:hover{
+  background: #c8e4f7;
+}
+
+.cs__btn-orange{
+  background: #fee4bd;
+}
+
+.cs__btn-orange:hover{
+  background: #ffefd7;
+}
+
+.cs__btn-green{
+  background: #b9dccb;
+}
+
+.cs__btn-green:hover{
+  background: #c7e4d6;
+}
+
+.cs__btn-purple{
+  background: #e6dbeb;
+}
+
+.cs__btn-purple:hover{
+  background: #ece6ef;
 }
 
 @media (max-width: 768px) {

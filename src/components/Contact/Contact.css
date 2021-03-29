@@ -1,7 +1,7 @@
 .contact-form{
     margin: 60px auto 20px auto;
     width:100%;
-    background: url("../../assets/images/Site_Background.jpg") no-repeat bottom;
+    /* background: url("../../assets/images/Site_Background.jpg") no-repeat bottom; */
 }
 
 
@@ -98,7 +98,7 @@
 
 
   .contact__send-message {
-    background: linear-gradient(to right, #7cb5e8, #0563bb);
+    background: #0a66c2;
     padding: 10px 22px;
     color: white;
     border-radius: 5rem;
@@ -109,7 +109,7 @@
 
   .contact__send-message:hover{
     color:white;
-    background: linear-gradient(to right, #88c6ff, #206cb4);
+    background: #3381ce;
   }
 
   .contact__submit{

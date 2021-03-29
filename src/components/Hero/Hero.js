@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const Hero = () => {
   return (
-    <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={2}>
+    <ScrollAnimation animateIn='fadeInLeft' animateOnce={true} duration={2} offset={0}>
     <div className="home__about home">
       <div className="home__about-text">
         <h1>Nikhita Joshi</h1>

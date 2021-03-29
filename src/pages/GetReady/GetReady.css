@@ -1,0 +1,20 @@
+.cs__pp1.getready img, .cs__prototypecontainer img{
+    height:auto !important;
+    width: 100% !important;
+}
+
+.appraisal__role.getready{
+    background: #b7dcf4;
+}
+
+.appraisal__role.getready{
+    background: #e6dbeb;
+}
+
+.cs__usercomment.getready{
+    border-color: #bfa8ca;
+}
+
+.cs__wireframecontainer.getready img{
+    height:100%;
+}

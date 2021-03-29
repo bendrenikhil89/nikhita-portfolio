@@ -1,210 +1,469 @@
-.cs__background{
+.cs__background {
   background: url("../../assets/images/Site_Background.jpg") no-repeat top;
 }
 
-.cs__container{
-    max-width: 1200px;
-    margin: 60px auto 20px auto;
+.cs__container {
+  max-width: 1200px;
+  margin: 60px auto 20px auto;
 }
 
-.cs__container h1{
+.cs__container h1 {
   text-align: center;
-  padding-top:30px;
+  padding-top: 30px;
 }
 
-.cs__header-title img{
-  margin-left:10px;
+.cs__header-title img {
+  margin-left: 10px;
 }
 
-.appraisal__header-photo{
-  background: url("../../assets/images/casestudies-dashboard/AppraisalSystem.png") no-repeat top;
-  max-height:auto;
-  height:50vh;
+/* .appraisal__header-photo {
+  background: url("../../assets/images/casestudies-dashboard/AppraisalSystem.png")
+    no-repeat top;
+  max-height: auto;
+  height: 50vh;
   width: 100%;
   background-size: cover;
   border-radius: 10px;
-  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   background-position: center center;
-  margin-top:30px;
+  margin-top: 30px;
+} */
+
+
+.appraisal__header-photo img{
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
 }
 
-.cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess{
+.cs__overview,
+.cs__userresearch,
+.cs__problemstatement,
+.cs__redesignprocess,
+.cs__usabilitytesting,
+.cs__conclusion {
   margin-top: 80px;
   padding: 25px 200px;
   border-radius: 10px;
   line-height: 1.5;
-  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.cs__problemstatement{
-  margin-top:60px;
+.cs__paperprototype, .cs__wireframes {
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.5;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
-.cs__overview h3, .cs__userresearch h3, .cs__problemstatement h3, .cs__redesignprocess h3{
+.cs__paperprototype h3 img, .cs__wireframes h3 img, .cs__usabilitytesting h3 img {
+  margin-left: 10px;
+}
+
+.cs__problemstatement {
+  margin-top: 60px;
+}
+
+.cs__overview h3,
+.cs__userresearch h3,
+.cs__problemstatement h3,
+.cs__redesignprocess h3,
+.cs__paperprototype h3,
+.cs__usabilitytesting h3,
+.cs__conclusion h3,
+.cs__wireframes h3 {
   text-align: center;
 }
 
-.cs__overview img, .cs__userresearch img, .cs__problemstatement img, .cs__redesignprocess img{
-  margin-left:10px;
+.cs__overview img,
+.cs__userresearch img,
+.cs__problemstatement img,
+.cs__redesignprocess img
+.cs__usabilitytesting img,
+.cs__paperprototype img,
+.cs__conclusion img,
+.cs__wireframes img {
+  margin-left: 10px;
 }
 
-.cs__overview p, .cs__userresearch p, .cs__problemstatement p, .cs__redesignprocess p{
-  margin-top:25px;
+.cs__overview p,
+.cs__userresearch p,
+.cs__problemstatement p,
+.cs__redesignprocess p,
+.cs__paperprototype p,
+.cs__usabilitytesting p,
+.cs__conclusion p, 
+.cs__wireframes p {
+  margin-top: 25px;
 }
 
-.appraisal__role{
-  background: #bbd4f2;
+.appraisal__role {
+  background: #fee4bd;
   display: flex;
-  margin-top:60px;
+  margin-top: 60px;
   border-radius: 10px;
   padding: 40px 150px;
-  color:#fff;
+  color: #232b32;
   font-weight: 600;
-  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.cs__role, .cs__res, .cs__duration{
-  flex:1;
+.cs__role,
+.cs__res,
+.cs__duration {
+  flex: 1;
   padding: 0px 10px;
 }
 
-.cs__role div:first-of-type, .cs__res div:first-of-type, .cs__duration div:first-of-type{
+.cs__role div:first-of-type,
+.cs__res div:first-of-type,
+.cs__duration div:first-of-type {
   margin-bottom: 20px;
 }
 
-.cs__role img:first-of-type, .cs__res img:first-of-type, .cs__duration img{
-  margin-left:10px;
+.cs__role img:first-of-type,
+.cs__res img:first-of-type,
+.cs__duration img {
+  margin-left: 10px;
 }
 
-.cs__res ul{
-  margin-left:25px;
+.cs__res ul {
+  margin-left: 25px;
 }
 
-.cs__usercomments{
+.cs__res ul li{
+  margin-top:5px;
+}
+
+.cs__usercomments {
   display: flex;
   margin: 0 auto;
-  margin-top:60px;
+  margin-top: 60px;
   height: 72px;
 }
 
-.cs__useravatar{
-  flex:1;
+.cs__useravatar {
+  flex: 1;
 }
 
-.cs__useravatar img{
-  height:72px;
-  width:auto;
+.cs__useravatar img {
+  height: 72px;
+  width: auto;
   border-radius: 50%;
   margin-left: 0px;
 }
 
-.cs__usercomment{
-  flex:6;
+.cs__usercomment {
+  flex: 6;
   display: flex;
   align-items: center;
-  color:#68728a;
+  color: #68728a;
   padding-left: 30px;
   border-left: 4px solid #3c85db4f;
 }
 
-.cs__usercomments2{
+.cs__usercomments2 {
   flex-direction: row-reverse;
 }
 
-.cs__usercomment2{
-  padding-left:0px;
+.cs__usercomment2 {
+  padding-left: 0px;
   padding-right: 30px;
   border-left: 0;
   border-right: 4px solid #3c85db4f;
 }
 
-.cs__useravatar2{
-    justify-content: flex-end;
-    display: flex;
+.cs__useravatar2 {
+  justify-content: flex-end;
+  display: flex;
 }
 
-.cs__personaText{
-  margin-top:60px !important;
+.cs__personaText {
+  margin-top: 60px !important;
 }
 
-.cs__personaSlider{
-  margin-top:20px;
+.cs__personaSlider {
+  margin-top: 20px;
 }
 
-.cs__personaSlider img{
+.cs__personaSlider img {
+  margin-left: 0px !important;
+}
+
+.cs__cardsorting img {
+  margin-left: 0px !important;
+  max-width: 100%;
+}
+
+.cs__redesignprocess img {
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-left:10px;
+}
+
+.cs__prototypecontainer {
+  margin-top: 25px;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.cs__prototypecontainer img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.25);
   margin-left:0px !important;
 }
 
-.cs__cardsorting img{
+.cs__wireframecontainer {
+  margin-top: 25px;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+}
+
+.cs__wireframecontainer img {
+  width: 100%;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.25);
   margin-left:0px !important;
 }
 
-.cs__redesignprocess img{
-  margin-top:20px;
+.h-divider {
+  margin: auto;
+  margin-top: 60px;
+  width: 100%;
+  position: relative;
+}
+
+.h-divider .shadow {
+  overflow: hidden;
+  height: 20px;
+}
+
+.h-divider .shadow:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px black;
+}
+
+
+.cs__cards{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.cs__cards li{
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
+.cs__cards img{
+  width:100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
-  @media screen and (min-width:1025px) and (max-width:1366px){
-    .cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess{
-      padding: 30px 150px;
-    }
+.cs__card_title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.cs__card_content{
+  padding:1rem;
+}
+
+.cs__card_content button{
+  margin-top: 20px;
+ padding: 10px 22px;
+  background: aliceblue !important;
+    border-radius: 5rem;
+   border: none;
+    cursor: pointer;
+}
+
+.cs__card_content button a{
+  text-decoration: none;
+  color: #232b32;
+}
+
+.cs__usercomment.appraisal{
+  border-color:#d6b27c;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .cs__overview,
+  .cs__userresearch,
+  .cs__problemstatement,
+  .cs__redesignprocess,
+  .cs__usabilitytesting,
+  .cs__conclusion {
+    padding: 30px 150px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .cs__overview,
+  .cs__userresearch,
+  .cs__problemstatement,
+  .cs__redesignprocess,
+  .appraisal__role,
+  .cs__usabilitytesting,
+  .cs__conclusion {
+    margin: 60px 20px;
   }
 
-  @media screen and (max-width:1250px){
-    .cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess, .appraisal__role{
-      margin: 60px 20px;
-    }
-
-    .appraisal__header-photo{
-      margin: 30px 20px;
-    }
-
-    .appraisal__header-photo{
-      width:auto;
-    }
-
-    .appraisal__role{
-      padding: 20px 20px;
-    }
+  .appraisal__header-photo {
+    margin: 30px 20px;
   }
 
-  @media screen and (max-width:1100px){
-    .cs__role, .cs__res, .cs__duration {
-      flex: 1 1;
-      padding: 20px 0px;
-    }
+  .appraisal__header-photo {
+    width: auto;
   }
 
-  @media screen and (min-width:901px) and (max-width:1024px){
-    .cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess{
-      padding: 20px 100px;
-    }
+  .appraisal__role {
+    padding: 20px 20px;
   }
 
-  @media screen and (min-width:801px) and (max-width:900px){
-    .cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess{
-      padding: 20px 50px;
-    }
+  .cs__paperprototype, .cs__wireframes {
+    margin-left:20px;
+    margin-right:20px;
   }
 
-  @media screen and (max-width:800px){
-    .cs__overview, .cs__userresearch, .cs__problemstatement, .cs__redesignprocess{
-      padding: 20px;
-    }
+  .cs__cards{
+    margin: 20px;
+  }
+}
 
-    .cs__usercomment{
-      border:0;
-    }
-
-    .cs__cardsorting img{
-      margin-left: 0 !important;
-      max-width: 100%;
-    }
+@media screen and (max-width:1150px){
+  .cs__prototypecontainer{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  @media screen and (max-width:767px){
-    .appraisal__role{
-      flex-direction: column;
-    }
+  .cs__wireframecontainer{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
+}
+
+@media screen and (max-width: 1100px) {
+  .cs__role,
+  .cs__res,
+  .cs__duration {
+    flex: 1 1;
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+  .cs__overview,
+  .cs__userresearch,
+  .cs__problemstatement,
+  .cs__redesignprocess,
+  .cs__usabilitytesting,
+  .cs__conclusion {
+    padding: 20px 100px;
+  }
+
+  .cs__prototypecontainer{
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  .cs__wireframecontainer{
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+  }
+  .cs__prototypecontainer img {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  .cs__overview,
+  .cs__userresearch,
+  .cs__problemstatement,
+  .cs__redesignprocess,
+  .cs__usabilitytesting,
+  .cs__conclusion {
+    padding: 20px 50px;
+  }
+
+  .cs__prototypecontainer{
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  .cs__wireframecontainer{
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cs__overview,
+  .cs__userresearch,
+  .cs__problemstatement,
+  .cs__redesignprocess,
+  .cs__usabilitytesting,
+  .cs__conclusion {
+    padding: 20px;
+  }
+
+  .cs__usercomment {
+    border: 0;
+  }
+
+  .cs__prototypecontainer {
+    flex-direction: column;
+  }
+  .cs__wireframecontainer{
+    flex-direction: column;
+  }
+
+  .cs__prototypecontainer img {
+    padding: 0px;
+    margin-left: 0 !important;
+    margin-top: 20px;
+  }
+  .cs__prototypecontainer{
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  .cs__wireframecontainer{
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .appraisal__role {
+    flex-direction: column;
+  }
+
+  .cs__container h1{
+    padding: 30px 20px 0px 20px;
+  }
+}
+
+@media screen and (max-width:575px){
+  .cs__wireframecontainer img {
+    height:400px;
+  }
+  .cs__prototypecontainer{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cs__wireframecontainer{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -54,6 +54,14 @@
 
 .logo{
   cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height:40px;
+  width: auto;
 }
 
 .nav-link:last-child a{
@@ -107,12 +115,22 @@
 }
 .main-header.scrolled {
   height: 50px;
-  /* background: #272727; */
   background: #fff;
-  /* color: white; */
+}
+
+.main-header.mobileScrolled {
+  background: #fff;
 }
 .main-header.scrolled .menu-icon__line, .main-header.scrolled .menu-icon__line::before, .main-header.scrolled .menu-icon__line::after {
   background: #002f70;
+}
+
+.d-none{
+  opacity: 0 !important;
+}
+
+.hide-scrollbar{
+  overflow-y:hidden;
 }
 
 @media screen and (max-width:1366px){

@@ -7,7 +7,9 @@ import AppraisalSystem from './pages/AppraisalSystem/AppraisalSystem';
 import AutonomousVehicle from './pages/AutonomousVehicle/AutonomousVehicle';
 import Dashboard from './pages/Dashboard/Dashboard';
 
-import { toast, ToastContainer} from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
+import GetReady from './pages/GetReady/GetReady';
+import Wayside from './pages/Wayside/Wayside';
 
 function App() {
   return (
@@ -17,8 +19,10 @@ function App() {
         <ToastContainer />
           <ScrollToTop />
           <Route path="/" exact component={Dashboard} />
+          <Route path="/casestudy/wayside" exact component={Wayside} />
           <Route path="/casestudy/appraisalsystem" exact component={AppraisalSystem} />
-          {/* <Route path="/casestudy/autonomousvehicle" exact component={AutonomousVehicle} /> */}
+          <Route path="/casestudy/autonomousvehicle" exact component={AutonomousVehicle} />
+          <Route path="/casestudy/getready" exact component={GetReady} />
       </div>
       <Footer />
     </>

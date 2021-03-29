@@ -1,131 +1,251 @@
-// import React from 'react';
-// import './AutonomousVehicle.css';
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './AutonomousVehicle.css';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-// import BannerImage from '../../assets/images/AutonomousVehicle/AutonomousVehicle.jpg';
+import AppraisalSystem from '../../assets/images/casestudies-dashboard/AutonomousVehicleTrans.png';
+import DashAuto from '../../assets/svgs/DashAuto.svg';
+import User1 from '../../assets/images/AppraisalSystem/User1.jpg';
+import User2 from '../../assets/images/AppraisalSystem/User2.jpg';
+import User3 from '../../assets/images/AppraisalSystem/User3.jpg';
+import AutoPersona from '../../assets/images/AutonomousVehicle/AutonomousPersona.png';
 
-// import Personas1 from '../../assets/images/AutonomousVehicle/PersonaAuto.svg';
+import AutoCardSorting from '../../assets/images/AutonomousVehicle/AutoCardSorting.jpg'
+import AutoWF1 from '../../assets/images/AutonomousVehicle/AutoWF1.png';
+import AutoWF2 from '../../assets/images/AutonomousVehicle/AutoWF2.png';
+import AutoWF3 from '../../assets/images/AutonomousVehicle/AutoWF3.png';
+import AutoWF4 from '../../assets/images/AutonomousVehicle/AutoWF4.png';
 
-// import CardSorting from '../../assets/images/AppraisalSystem/4.jpg';
-// import Appraisee from '../../assets/images/AppraisalSystem/Appraisee.svg';
+import AutoVD1 from '../../assets/images/AutonomousVehicle/AutoVD1.png';
+import AutoVD2 from '../../assets/images/AutonomousVehicle/AutoVD2.png';
+import AutoVD3 from '../../assets/images/AutonomousVehicle/AutoVD3.png';
+import AutoVD4 from '../../assets/images/AutonomousVehicle/AutoVD4.png';
 
-// import WF1 from '../../assets/images/AppraisalSystem/WF1.png';
-// import WF2 from '../../assets/images/AppraisalSystem/WF2.png';
-// import WF3 from '../../assets/images/AppraisalSystem/WF3.png';
-// import WF4 from '../../assets/images/AppraisalSystem/WF4.png';
-// import CaseStudyBanner from '../../components/CaseStudyBanner/CaseStudyBanner';
+import waySideHeader from '../../assets/images/casestudies-dashboard/WaysideTrans.png';
+import appraisalHeader from '../../assets/images/casestudies-dashboard/AppraisalSystemTrans.png';
+import getReady from '../../assets/images/casestudies-dashboard/GetReady.png';
 
+import ScrollAnimation from 'react-animate-on-scroll';
 
+const AutonomousVehicle = () => {
+    const arrowStyles= {
+        position: 'absolute',
+        zIndex: 2,
+        top: 'calc(50% - 15px)',
+        width: 30,
+        height: 30,
+        cursor: 'pointer',
+        textAlign: 'end',
+        fontSize: '24px',
+        color: '#2d3948'
+    };
 
-// const AutonomousVehicle = () => {
-//     return (
-//         <div className="av__container">
-//             <CaseStudyBanner title="Autonomous Vehicle Monitoring Web Application" src={BannerImage} />
-//             <div className="casestudy-para">
-//                 <div className="casestudy-para-title">
-//                     <h3>Purpose</h3>
-//                 </div>
-//                 <div className="casestudy-para-desc">
-//                     <p>The operators need to monitor the operation of autonomus vehicles, address if there are any obstracles, check for notifications and divert the vehicles if the roads are blocked. This web application will help the operators to complete their tasks easily and without any issues.</p>
-//                 </div>
+    return (
+        <div className="cs__background">
+        <div className="cs__container">
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={2} offset={60}>
+            <div className="cs__header-title">
+                <h1>Autonomous Vehicle Operation Monitoring Web App <img src={DashAuto} /></h1>
+            </div>
+            <div className="auto__header-photo">
+                <img src={AppraisalSystem} />
+            </div>
+            <div className="cs__overview">
+                <h3>Overview <img src={DashAuto} /></h3>
+                <p>The operators monitor the operation of autonomous vehicles, address obstacles if there are any, check for notifications and divert the vehicles if the roads are blocked. This web application will help the operators to complete their tasks more efficiently with a reduced scope of errors.</p>
+            </div>
+            </ScrollAnimation>
 
-//                 <div className="casestudy-para-title">
-//                     <h3>Impact</h3>
-//                 </div>
-//                 <div className="casestudy-para-desc">
-//                     <p>In Autonomous vehicle monitoring web application, the operators found what they were looking for. The easy monitoring sytem lead to increased efficiency of the users. They were able to easily track any object of their choice, find the issue in it and connect with the stake holders to resolve it. Because of the great effeciency, this application gave great ROI. Soon the application was rolled out in the market leading to the high demand in different companies.</p>
-//                 </div>
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="auto__role">
+                <div className="cs__duration">
+                    <div>DURATION <img src={DashAuto} /></div>
+                    <div>5 Months</div>
+                </div>
+                <div className="cs__role">
+                    <div>ROLE <img src={DashAuto} /></div>
+                    <div>UX Designer</div>
+                </div>
+                <div className="cs__res">
+                    <div>RESPONSIBILITIES <img src={DashAuto} /></div>
+                    <div>
+                        <ul>
+                            <li>Conduct User Research</li>
+                            <li>Create Wireframes</li>
+                            <li>Create Visual Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </ScrollAnimation>
 
-//                 <div className="casestudy-para-title">
-//                     <h3>My Role and Responsibilities</h3>
-//                 </div>
-//                 <div className="casestudy-para-desc">
-//                     <p>I joined this project from the scratch. I was part of initial meetings with the stakeholders held for understanding the requirements. I worked with a fellow designer who was at the client location. I was responsible for:</p>
-//                     <ul>
-//                         <li>Requirement gathering and analysis</li>
-//                         <li>User research</li>
-//                         <li>Designing low-fi wirframes</li>
-//                         <li>Visual designs</li>
-//                     </ul>
-//                 </div>
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__problemstatement">
+                <h3>Problem Statement <img src={DashAuto} /></h3>
+                <p>The operators do not have a system wherein they can monitor and manage the notifications for autonomous vehicles remotely. The problems had to be conveyed manually by the driver to the operators. With the introduction of autonomous vehicles, the driver would no longer be a part of the process, thus leading to lack of infrastructure to monitor and manage the newer autonomous vehicles. An ideal solution would be a web application that operators can access remotely to monitor thus enabling them to handle notifications simultaneously.</p>
+            </div>
+            </ScrollAnimation>
 
-//                 <div className="casestudy-para-title">
-//                     <h3>Project Duration</h3>
-//                 </div>
-//                 <div className="casestudy-para-desc">
-//                     <p>4 months</p>
-//                 </div>
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__userresearch">
+                <h3>User Research <img src={DashAuto} /></h3>
+                <p>As there was a single target user group: "the operators", identifying end users was straightforward. We created a few lists of questions to understand the current protocol being followed when an operator would be notified of an issue, what the current bottlenecks were, what features were a must have for the users to do their job more efficiently etc.</p>
+                <div className="cs__usercomments auto__usercomments">
+                    <div className="cs__useravatar cs__useravatar1"><img src={User1} /></div>
+                    <div className="cs__usercomment cs__usercomment1 auto__usercomment">"I would like to work on multiple displays at the same time to enhance my productivity to monitor complex data!"</div>
+                </div>
+                <div className="cs__usercomments cs__usercomments2">
+                    <div className="cs__useravatar cs__useravatar2"><img src={User2} /></div>
+                    <div className="cs__usercomment cs__usercomment2 auto__usercomment">"I don't want to have any changes made to the naming convention/patterns for vehicle, routes, etc as I am familiar with the current pattern!"</div>
+                </div>
+                <div className="cs__usercomments">
+                    <div className="cs__useravatar cs__useravatar3"><img src={User3} /></div>
+                    <div className="cs__usercomment cs__usercomment3 auto__usercomment">"It would be great if I can track live running status of vehicles!"</div>
+                </div>
+                <p className="cs__personaText">Based on the above user research, 1 persona was finalized and created.</p>
 
-//                 <div className="casestudy-para-title">
-//                     <h3>Problem Statement</h3>
-//                 </div>
-//                 <div className="casestudy-para-desc">
-//                     <p>The operators have a problem in monitorning and managing the notifications for automonus vehicle remotely. An ideal solution would be a web application which operators can access remotely, montior and handle notifications simultaneously. </p>
-//                 </div>
+                <div className="cs__personaSlider">
+                    <Carousel 
+                        showArrows={true} 
+                        showThumbs={false} 
+                        showIndicators={false}
+                        renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                            hasPrev && (
+                                <span onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 0, textAlign:'left' }}>
+                                    <i className="fas fa-chevron-left"></i>
+                                </span>
+                            )
+                        }
+                        renderArrowNext={(onClickHandler, hasNext, label) =>
+                            hasNext && (
+                                <span onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 0, textAlign:'right' }}>
+                                    <i className="fas fa-chevron-right"></i>
+                                </span>
+                            )
+                        }
+                    >
+                        <div>
+                            <img src={AutoPersona} />
+                        </div>
+                    </Carousel>
+                </div>
+            </div>
+            </ScrollAnimation>
+            
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__redesignprocess">
+                <h3>Card Sorting Activity <img src={DashAuto} /></h3>
+                <p>After conducting user interviews, a list of requirements were identified. Card sorting activity was performed to pick and choose which user requirements were to be included as a part of the web application.</p>
+                <div className="cs__cardsorting">
+                    <img src={AutoCardSorting} />
+                </div>
+                <p>Because there was a lot of vehicle metadata, it was decided that a vehicles will have a separate page displaying all minute details for a better overview.</p>
+            </div>
+            </ScrollAnimation>
+            
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__wireframes">
+                <h3>Wireframes <img src={DashAuto} /></h3>
+                <div className="auto__wireframecontainer">
+                    <div className="auto__pp1"><img src={AutoWF1} /></div>
+                    <div className="auto__pp2"><img src={AutoWF2} /></div>
+                    <div className="auto__pp3"><img src={AutoWF3} /></div>
+                    <div className="auto__pp4"><img src={AutoWF4} /></div>
+                </div>
+            </div>
+            </ScrollAnimation>
+                        
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__wireframes">
+                <h3>Visual Design <img src={DashAuto} /></h3>
+                <div className="cs__personaSlider">
+                    <Carousel 
+                        showArrows={true} 
+                        showThumbs={false} 
+                        showIndicators={false}
+                        renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                            hasPrev && (
+                                <span onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 0, textAlign:'left' }}>
+                                    <i className="fas fa-chevron-left"></i>
+                                </span>
+                            )
+                        }
+                        renderArrowNext={(onClickHandler, hasNext, label) =>
+                            hasNext && (
+                                <span onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 0, textAlign:'right' }}>
+                                    <i className="fas fa-chevron-right"></i>
+                                </span>
+                            )
+                        }
+                    >
+                        <div className="cs__carouselImageDiv">
+                            <img src={AutoVD1} />
+                        </div>
+                        <div className="cs__carouselImageDiv">
+                            <img src={AutoVD2} />
+                        </div>
+                        <div className="cs__carouselImageDiv">
+                            <img src={AutoVD3} />
+                        </div>
+                        <div className="cs__carouselImageDiv">
+                            <img src={AutoVD4} />
+                        </div>
+                    </Carousel>
+                </div>
+            </div>
+            </ScrollAnimation>
 
-//                 <div className="casestudy-para-title">
-//                     <h3>Process Followed</h3>
-//                 </div>
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__usabilitytesting">
+                <h3>Usability Testing <img src={DashAuto} /></h3>
+                <p>My fellow UX designer who was located at the client location conducted usability testing with the operators. Because the operators who were involved in the design process gave constant feedback, changes to the final version was minimum. Minor changes were made to the visual design pertaining to the colour palette.</p>
+            </div>
+            </ScrollAnimation>
 
-                            
-//                 <div className="timeline-item" process-title='User Interviews'>
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__conclusion">
+                <h3>Conclusion <img src={DashAuto} /></h3>
+                <p>The Autonomous vehicle monitoring web application ticked all the boxes which were deemed as a neccessity by the operators. The easy monitoring system lead to increased efficiency of the users. They were able to easily track any object of their choice, find the issue and connect with the right stakeholders to resolve it. Because of its great efficiency, this application gave great ROI and thus the application was rolled out in the market, leading to a high demand in different companies.</p>
+            </div>
+            </ScrollAnimation>
+            
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="h-divider">
+                <div className="shadow"></div>
+            </div>
+            </ScrollAnimation>
 
-//                 <p>As there was only one target user: The operator, identifying users was not a hard task. We created few list of questions to understand the what are user’s needs, what users want to do in the application, which all things are important for monitoring purpose, etc. During user interviews we came to know that: </p>
-//                     <ul>
-//                         <li>The operators prefers to work on multiple displays at the same time because of too much data to be considered for the monitoring purpose. </li>
-//                         <li>There is a fixed pattern based on which the vehicle, routes, Infra objects, etc. are named and the operators find it easy to remember those names. </li>
-//                     </ul>
-//                </div>
-                
-//                 <div className="timeline-item" process-title='Creating Personas'>
-//                     <p>1 persona was finalized and created</p>
-//                     <ul>
-//                         <li>Operator</li>
-//                     </ul>
-//                     <div className="tl__images">
-//                         <div><img src={Personas1}/></div>                     
-//                     </div>
-//                 </div>
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__othercs">
+                <ul className="cs__cards">
+                    <li>
+                        <div><img src={waySideHeader} style={{background:'#b7dcf4',height:'225px'}} /></div>
+                        <div className="cs__card_content">
+                            <h2 className="cs__card_title">Wayside Inspector</h2>
+                            <button className="btn cs__btn-blue"><Link to="/casestudy/wayside">View Case Study</Link></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src={appraisalHeader} style={{background:'#fee4bd',height:'225px'}} /></div>
+                        <div className="cs__card_content">
+                            <h2 className="cs__card_title">Appraisal System Revamping</h2>
+                            <button className="btn cs__btn-orange"><Link to="/casestudy/appraisalsystem">View Case Study</Link></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src={getReady} style={{background:'#e6dbeb',height:'225px'}} /></div>
+                        <div className="cs__card_content">
+                            <h2 className="cs__card_title">Get Ready</h2>
+                            <button className="btn cs__btn-purple"><Link to="/casestudy/getready">View Case Study</Link></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </ScrollAnimation>
+        </div>
+        </div>
+    )
+}
 
-//                 <div className="timeline-item" process-title='Card Sorting Activity'>
-//                     <p>There was long list of user requirements. Card Sorting activity was performed to finalized the functionalities</p>
-//                     <div className="tl__images">
-//                         <div><img src={CardSorting}/></div>
-//                     </div>
-//                     <p>There was alot of information involved with Vehicle. So it was decided to make a separate page have list of vehicle and all the details associated with it.</p>
-//                 </div>
-
-//                 <div className="timeline-item" process-title='Finalizing Information Architecture'>
-//                     <p style={{marginTop:'20px'}}>Appraisee</p>
-//                     <div className="tl__images wf__images">
-//                         <div><img src={Appraisee}/></div>
-//                     </div>               
-//                 </div>
-
-//                 <div className="timeline-item" process-title='Creating Wireframes'>
-//                     <div className="tl__images wf__images">
-//                         <div><img src={WF1}/></div>
-//                         <div><img src={WF2}/></div>
-//                         <div><img src={WF3}/></div>
-//                         <div><img src={WF4}/></div>
-//                     </div>
-//                 </div>
-
-//                 <div className="timeline-item" process-title='Creating Visual Designs'>
-//                     <div className="tl__images wf__images">
-//                         <div><img src={WF1}/></div>
-//                         <div><img src={WF2}/></div>
-//                         <div><img src={WF3}/></div>
-//                         <div><img src={WF4}/></div>
-//                     </div>
-//                 </div>
-
-//                 <div className="timeline-item" process-title='Conducting Usability Testing at the client location'>
-//                     <p>My fellow designer who was located at the client location conducted usability testing with the operators. As there were continous feedback session with the operators involved in the design process and colored reprsentation mattered alot so visual designs were considered for the usability testing. Few minor color coding representation of notifications and states of the vehicle and infra objects were revisited based on the user feedback.</p>
-//                 </div>
-
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default AutonomousVehicle;
+export default AutonomousVehicle;

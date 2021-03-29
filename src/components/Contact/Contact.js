@@ -57,7 +57,7 @@ const Contact = () => {
       }
 
     return (
-        <ScrollAnimation animateIn='fadeInUp' animateOnce={true} duration={1.5}>
+        <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={2}>
         <form className="contact-form contact" onSubmit={sendEmail}>
         <div className="contact-wrapper">
             <h2>Contact</h2>
