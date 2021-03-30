@@ -56,7 +56,7 @@ const CaseStudy = () => {
       <CaseStudyCard
         src={GetReady}
         title="Get Ready!"
-        desc="An online shoppintg app which gives an additional feature of giving you options to pair up your clothes and accesories with your recent buy."
+        desc="An online shopping app with an additional feature of giving you options to pair up your clothes and accesories with your recent buy."
         pathTo="/casestudy/getready"
         alignmentClass="col col-text col-left"
         imgClass="col col-image col-image-right"
