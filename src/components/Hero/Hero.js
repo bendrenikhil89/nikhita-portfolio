@@ -6,6 +6,7 @@ import useWindowDimensions from '../../Hooks/useWindowDimensions';
 
 const Hero = () => {
   const { width } = useWindowDimensions();
+  
   return (
     <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={3} offset={0}>
     <div className="home__about home">

@@ -5,7 +5,6 @@
     align-items: center;
     margin-top:60px;
     z-index: 2;
-    /* height:88vh; */
 }
 
 .home__about-text{
@@ -102,7 +101,7 @@
     color: #3080ec;
   }
 
-@media screen and (max-width:1366px){
+@media screen and (max-width:1600px){
   .home__about-image-container, .home__about-image-profile{
     height:550px
   }
