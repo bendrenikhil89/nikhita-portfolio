@@ -155,8 +155,20 @@ const AutonomousVehicle = () => {
                 </div>
             </div>
             </ScrollAnimation>
-                        
+
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__wireframes">
+                <h3>Visual Design <img src={DashAuto} /></h3>
+                <div className="auto__wireframecontainer">
+                    <div className="auto__pp1"><img src={AutoVD1} /></div>
+                    <div className="auto__pp2"><img src={AutoVD2} /></div>
+                    <div className="auto__pp3"><img src={AutoVD3} /></div>
+                    <div className="auto__pp4"><img src={AutoVD4} /></div>
+                </div>
+            </div>
+            </ScrollAnimation>
+                        
+            {/* <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__wireframes">
                 <h3>Visual Design <img src={DashAuto} /></h3>
                 <div className="cs__personaSlider">
@@ -194,7 +206,7 @@ const AutonomousVehicle = () => {
                     </Carousel>
                 </div>
             </div>
-            </ScrollAnimation>
+            </ScrollAnimation> */}
 
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__usabilitytesting">

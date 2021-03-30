@@ -1,12 +1,16 @@
 import React from "react";
 import "./Hero.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import {Link as LinkS} from 'react-scroll';
+import useWindowDimensions from '../../Hooks/useWindowDimensions';
 
 const Hero = () => {
+  const { width } = useWindowDimensions();
   return (
     <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={3} offset={0}>
     <div className="home__about home">
       <div className="home__about-text">
+        <div>
         <h1>Nikhita Joshi</h1>
         <p>
           Hi, I am an Engineer turned UX designer. My engineer logic helps me to
@@ -33,6 +37,10 @@ const Hero = () => {
               <i className="fas fa-envelope" aria-hidden="true"></i>
             </div>
           </a>
+        </div>
+        {width > 1024 && <div className="landing__arrow landing__bounce">
+          <LinkS to="casestudies" spy={true} smooth={true} duration={1000} offset={-45}><i className="fas fa-angle-double-down fa-2x"></i></LinkS>
+        </div>}
         </div>
       </div>
       <div className="home__about-image">

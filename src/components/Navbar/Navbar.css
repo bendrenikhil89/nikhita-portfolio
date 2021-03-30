@@ -71,11 +71,6 @@
   margin-left:0.6rem !important;
 }
 
-.main-header .nav-links .nav-link a:hover {
-  /* background: #002f70;
-  color:#fff; */
-}
-
 .nav-link:last-child a:hover{
   background:rgb(220, 235, 248) !important;
 }

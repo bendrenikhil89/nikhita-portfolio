@@ -70,7 +70,7 @@ const Wayside = () => {
             </div>
             <div className="cs__overview">
                 <h3>Overview <img src={DashAppraisal} /></h3>
-                <p>Railroad personnel spend large amounts of time performing FRA required inspections of grade crossings. Siemens’ Wayside Inspector has been designed to facilitate the labour of the railroad inspectors, improving test management while decreasing train delays driven in this process. Currently, the Wayside Inspector performs three FRA mandated tests including warning time, which is the most time-consuming test. Additionally, it also performs monthly standby power tests, as well as a ground fault detection system that monitors the battery buses. The use of the Wayside Inspector can help railroads to increase testing efficiency and facilitate the inspector’s work.</p>
+                <p>Railroad personnel spend large amounts of time performing FRA required inspections of grade crossings. The Wayside Inspector has been designed to facilitate the labour of the railroad inspectors, improving test management while decreasing train delays driven in this process. Currently, the Wayside Inspector performs three FRA mandated tests including warning time, which is the most time-consuming test. Additionally, it also performs monthly standby power tests, as well as a ground fault detection system that monitors the battery buses. The use of the Wayside Inspector can help railroads to increase testing efficiency and facilitate the inspector’s work.</p>
             </div>
             </ScrollAnimation>
 

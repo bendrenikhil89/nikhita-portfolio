@@ -39,6 +39,11 @@ const Navbar = () => {
         setClick(click => !click);
     }
 
+    const handleHomeClick = () => {
+        scroll.scrollToTop();
+        setClick(false);
+    }
+
     useEffect(() => {
         if(click) {
             document.body.classList.add('hide-scrollbar');
@@ -62,7 +67,7 @@ const Navbar = () => {
         
             <ul className="nav-links">
                 <li className="nav-link">
-                    {location === "/" ? <Element onClick={() => scroll.scrollToTop()} duration={1000}><a href="#">Home</a></Element> : <Link to="/">Home</Link>}
+                    {location === "/" ? <Element onClick={handleHomeClick} duration={1000}><a href="#">Home</a></Element> : <Link onClick={handleHomeClick} to="/">Home</Link>}
                 </li>
                 <li className="nav-link nav-link-casestudies">
                     {location === "/" ? <LinkS to="casestudies" spy={true} smooth={true} duration={1000} offset={-45} onClick={() => setClick(false)}>Case Studies</LinkS> : <Link to="/#casestudies" onClick={() => setClick(false)}>Case Studies</Link>}

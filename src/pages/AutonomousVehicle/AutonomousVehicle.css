@@ -41,7 +41,7 @@
 
 .auto__wireframecontainer img {
   width: 100%;
-  height: 400px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.25);
   margin-left: 0px !important;
@@ -90,6 +90,9 @@
   .auto__role {
     flex-direction: column;
   }
+  .cs__usercomment, .auto__usercomment {
+    border: 0 !important;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -98,9 +101,9 @@
   }
 
   .auto__wireframecontainer img {
-    height: 275px;
+    height: auto;
   }
   .cs__carouselImageDiv img {
-    height: 275px !important;
+    height: auto !important;
   }
 }
