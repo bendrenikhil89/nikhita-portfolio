@@ -65,14 +65,18 @@
 }
 
 .nav-link:last-child a{
-  background: aliceblue;
+  background: linear-gradient(315deg, #aaf6da, #ddfdf1);
   border-radius: 30px;
   padding: 0.5rem 1.25rem !important;
   margin-left:0.6rem !important;
 }
 
+.nav-link.curr-active {
+  color: #3080ec;
+}
+
 .nav-link:last-child a:hover{
-  background:rgb(220, 235, 248) !important;
+  opacity: 0.85;
 }
 
 .main-header .menu-icon {

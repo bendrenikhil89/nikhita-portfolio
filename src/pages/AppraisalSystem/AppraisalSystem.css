@@ -468,3 +468,10 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+@media screen and (max-width:400px){
+  .cs__cards{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+}

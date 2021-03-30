@@ -12,6 +12,7 @@ import GetReady from './pages/GetReady/GetReady';
 import Wayside from './pages/Wayside/Wayside';
 import useWindowDimensions from './Hooks/useWindowDimensions';
 import * as Scroll from 'react-scroll';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route path="/casestudy/appraisalsystem" exact component={AppraisalSystem} />
             <Route path="/casestudy/autonomousvehicle" exact component={AutonomousVehicle} />
             <Route path="/casestudy/getready" exact component={GetReady} />
+            <Route path="*" exact component={PageNotFound} />
           </Switch>
       </div>
       <Footer />

@@ -3,7 +3,6 @@ import {Link, useLocation} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
 import * as Scroll from 'react-scroll';
 import useWindowDimensions from '../../Hooks/useWindowDimensions';
-// import siteLogo from '../../assets/svgs/Logo.svg';
 import siteLogo from '../../assets/images/Logo.png';
 import './Navbar.css';
 
@@ -67,7 +66,7 @@ const Navbar = () => {
         
             <ul className="nav-links">
                 <li className="nav-link">
-                    {location === "/" ? <Element onClick={handleHomeClick} duration={1000}><a href="#">Home</a></Element> : <Link onClick={handleHomeClick} to="/">Home</Link>}
+                    {location === "/" ? <LinkS to="home" spy={true} smooth={true} duration={1000} offset={-75} onClick={() => setClick(false)}>Home</LinkS> : <Link to="/#home" onClick={() => setClick(false)}>Home</Link>}
                 </li>
                 <li className="nav-link nav-link-casestudies">
                     {location === "/" ? <LinkS to="casestudies" spy={true} smooth={true} duration={1000} offset={-45} onClick={() => setClick(false)}>Case Studies</LinkS> : <Link to="/#casestudies" onClick={() => setClick(false)}>Case Studies</Link>}
