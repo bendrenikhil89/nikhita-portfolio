@@ -147,6 +147,7 @@ const AutonomousVehicle = () => {
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__wireframes">
                 <h3>Wireframes <img src={DashAuto} /></h3>
+                <p>This was a web application that would be operated from a control center with big monitors. To accommodate this workstation constraint, we created web apps screens for big monitor resolution instead of following mobile first approach.</p>
                 <div className="auto__wireframecontainer">
                     <div className="auto__pp1"><img src={AutoWF1} /></div>
                     <div className="auto__pp2"><img src={AutoWF2} /></div>
@@ -158,7 +159,7 @@ const AutonomousVehicle = () => {
 
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__wireframes">
-                <h3>Visual Design <img src={DashAuto} /></h3>
+                <h3>Visual Designs <img src={DashAuto} /></h3>
                 <div className="auto__wireframecontainer">
                     <div className="auto__pp1"><img src={AutoVD1} /></div>
                     <div className="auto__pp2"><img src={AutoVD2} /></div>
@@ -168,50 +169,10 @@ const AutonomousVehicle = () => {
             </div>
             </ScrollAnimation>
                         
-            {/* <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
-            <div className="cs__wireframes">
-                <h3>Visual Design <img src={DashAuto} /></h3>
-                <div className="cs__personaSlider">
-                    <Carousel 
-                        showArrows={true} 
-                        showThumbs={false} 
-                        showIndicators={false}
-                        renderArrowPrev={(onClickHandler, hasPrev, label) =>
-                            hasPrev && (
-                                <span onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 0, textAlign:'left' }}>
-                                    <i className="fas fa-chevron-left"></i>
-                                </span>
-                            )
-                        }
-                        renderArrowNext={(onClickHandler, hasNext, label) =>
-                            hasNext && (
-                                <span onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 0, textAlign:'right' }}>
-                                    <i className="fas fa-chevron-right"></i>
-                                </span>
-                            )
-                        }
-                    >
-                        <div className="cs__carouselImageDiv">
-                            <img src={AutoVD1} />
-                        </div>
-                        <div className="cs__carouselImageDiv">
-                            <img src={AutoVD2} />
-                        </div>
-                        <div className="cs__carouselImageDiv">
-                            <img src={AutoVD3} />
-                        </div>
-                        <div className="cs__carouselImageDiv">
-                            <img src={AutoVD4} />
-                        </div>
-                    </Carousel>
-                </div>
-            </div>
-            </ScrollAnimation> */}
-
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__usabilitytesting">
                 <h3>Usability Testing <img src={DashAuto} /></h3>
-                <p>My fellow UX designer who was located at the client location conducted usability testing with the operators. Because the operators who were involved in the design process gave constant feedback, changes to the final version was minimum. Minor changes were made to the visual design pertaining to the colour palette.</p>
+                <p>My fellow UX designer who was located at the client location conducted usability testing with the operators. The clickable prototype was used with real tasks & on real systems in Hamburg, Germany for the testing. The result was analyzed and it was inferred that user requirements varied little than the client's requirement. Changes were done to the wireframes and after 2-3 iterations, the design was finalized.</p>
             </div>
             </ScrollAnimation>
 

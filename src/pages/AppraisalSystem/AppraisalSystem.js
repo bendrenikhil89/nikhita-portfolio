@@ -32,6 +32,8 @@ import VD3 from '../../assets/images/AppraisalSystem/VD2.png';
 import VD4 from '../../assets/images/AppraisalSystem/VD4.png';
 import VD5 from '../../assets/images/AppraisalSystem/VD5.png';
 import VD6 from '../../assets/images/AppraisalSystem/VD6.png';
+import iaAppraisee from '../../assets/images/AppraisalSystem/Appraisee.png';
+import iaAppraiser from '../../assets/images/AppraisalSystem/Appraiser.png';
 
 import waySideHeader from '../../assets/images/casestudies-dashboard/WaysideTrans.png';
 import getReady from '../../assets/images/casestudies-dashboard/GetReady.png';
@@ -62,7 +64,7 @@ const AppraisalSystem = () => {
             </div>
             <div className="cs__overview">
                 <h3>Overview <img src={DashAppraisal} /></h3>
-                <p>Employees and Managers have to fill data for appraisals, set goals and evaluate them. The appraisal tool should ease their work by providing an user intuitive navigation, highlight important tasks by providing notification badges and providing a mechanism to help users track their goals.</p>
+                <p>Employees and Managers have to fill data for appraisals, set goals, and evaluate them. The existing appraisal tool has many irrelevant fields and confusing navigation which reduces the user's efficiency. The appraisal tool should ease their work by providing user-intuitive navigation, highlight important tasks by displaying notification badges, and a mechanism to help users track their goals.</p>
             </div>
             </ScrollAnimation>
 
@@ -151,17 +153,31 @@ const AppraisalSystem = () => {
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__redesignprocess">
                 <h3>Redesign Process <img src={DashAppraisal} /></h3>
-                <p>After getting inputs from the target users, a card sorting activity was done in order to determine which functionalities should be kept and which should removed.</p>
+                <p>We got helpful insights from the users after the research. As there were too many irrelevant functionalities in the existing application, a card sorting activity was done to determine which functionalities should be kept and which should be removed.</p>
                 <div className="cs__cardsorting">
                     <img src={AppraisalCardSorting} />
                 </div>
                 <p>After conducting card sorting activities with the users, few functionalities like My Progress overview, peer progress and team progress were included.</p>
             </div>
             </ScrollAnimation>
+
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__redesignprocess">
+                <h3>Information Architecture <img src={DashAppraisal} /></h3>
+                <p>After the card sorting activity, the information architecture was finalised.</p>
+                <div className="cs__cardsorting">
+                    <img src={iaAppraisee} />
+                </div>
+                <div className="cs__cardsorting">
+                    <img src={iaAppraiser} />
+                </div>
+            </div>
+            </ScrollAnimation>
             
             <ScrollAnimation animateIn='fadeIn ' animateOnce={true} duration={1}>
             <div className="cs__paperprototype">
-                <h3>Creating Paper Prototypes <img src={DashAppraisal} /></h3>
+                <h3>Paper Prototypes <img src={DashAppraisal} /></h3>
+                <p>As there was a complete revamping of the appraisal application, we started by creating paper prototypes. This helped us in the visualization of the information we intended to show in the application.</p>
                 <div className="cs__prototypecontainer">
                     <div className="cs__pp1"><img src={PaperPrototype1} /></div>
                     <div className="cs__pp2"><img src={PaperPrototype2} /></div>
@@ -174,6 +190,8 @@ const AppraisalSystem = () => {
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__wireframes">
                 <h3>Wireframes <img src={DashAppraisal} /></h3>
+                <p>Appraisal system's existing app was quite clunky and wasn't user friendly. It had too much information over little real estate.</p>
+                <p>My redesign focused on the following: Improving the user experience of the website by making it a single page website, incorporating our branding in a better way and showcase what we're doing in a user-friendly manner.</p>
                 <div className="cs__wireframecontainer">
                     <div className="cs__pp1"><img src={WireFrame1} /></div>
                     <div className="cs__pp2"><img src={WireFrame2} /></div>
@@ -187,7 +205,7 @@ const AppraisalSystem = () => {
 
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__wireframes">
-                <h3>Visual Design <img src={DashAppraisal} /></h3>
+                <h3>Visual Designs <img src={DashAppraisal} /></h3>
                 <div className="cs__wireframecontainer">
                     <div className="cs__pp1"><img src={VD1} /></div>
                     <div className="cs__pp2"><img src={VD2} /></div>
@@ -202,7 +220,7 @@ const AppraisalSystem = () => {
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__usabilitytesting">
                 <h3>Usability Testing <img src={DashAppraisal} /></h3>
-                <p>As reaching the users was easy, we conducted usability testing in the usability lab. All the major use cases were considered. As part of the study, it was observed that users were able to identify and update their goals. Based on the user feedbacks, more details were added to the peer goals overview section. Also for appraiser view, more goal details were added to the landing screen.</p>
+                <p>We had a usability testing lab with all equipment set up in our office campus. We created a list of all major use cases which was considered for the testing. As the users were employees and managers of the company, shortlisting them was easy. As part of the study, it was observed that users were able to identify and update their goals. Based on the user feedback, more goal tracking details were added to the peer goals overview section. Also for the appraiser view, more goal attributes were added to the landing screen.</p>
             </div>
             </ScrollAnimation>
             

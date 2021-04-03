@@ -70,7 +70,7 @@ const Wayside = () => {
             </div>
             <div className="cs__overview">
                 <h3>Overview <img src={DashAppraisal} /></h3>
-                <p>Railroad personnel spend large amounts of time performing FRA required inspections of grade crossings. The Wayside Inspector has been designed to facilitate the labour of the railroad inspectors, improving test management while decreasing train delays driven in this process. Currently, the Wayside Inspector performs three FRA mandated tests including warning time, which is the most time-consuming test. Additionally, it also performs monthly standby power tests, as well as a ground fault detection system that monitors the battery buses. The use of the Wayside Inspector can help railroads to increase testing efficiency and facilitate the inspector’s work.</p>
+                <p>Railroad personnel has many responsibilities and tasks to do related to wayside equipment. Railroad personnel spend a lot of time performing inspections of grade crossings required by the Federal Railroad Administration (FRA). Along with the tests, he/she has to monitor and maintain the wayside equipment. Both tasks are time-consuming for him/her. However, monitoring and maintaining tasks are more complex as they are done offline. The personnel has to visit individual sites to check the wayside equipment. The use of the Wayside Inspector can help railroads to increase testing efficiency and facilitate the inspector’s work.</p>
             </div>
             </ScrollAnimation>
 
@@ -109,7 +109,7 @@ const Wayside = () => {
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__userresearch">
                 <h3>User Research <img src={DashAppraisal} /></h3>
-                <p>The users were easily approachable for user interviews. I created a list of questions to understand the problems users were facing with the existing remote maintenance system.</p>
+                <p>A list of questions was created to understand the problems with exiting remote monitoring and maintenance system. During the interaction, I got to know a few common insights from the users. A few of them are:</p>
                 <div className="cs__usercomments">
                     <div className="cs__useravatar cs__useravatar1"><img src={User1} /></div>
                     <div className="cs__usercomment cs__usercomment1">"I would like to receive issue with wayside devices directly!"</div>
@@ -163,26 +163,18 @@ const Wayside = () => {
             
             <ScrollAnimation animateIn='fadeIn ' animateOnce={true} duration={1}>
             <div className="cs__paperprototype">
-                <h3>Creating Paper Prototype <img src={DashAppraisal} /></h3>
+                <h3>Paper Prototypes <img src={DashAppraisal} /></h3>
+                <p>Before starting the wireframes, I usually prefer to draw paper prototypes. I created a paper prototype with a basic understanding for Mobile screens.</p>
                 <div>
                     <div className="cs__pp1 wayside"><img src={PaperPrototype1} /></div>
                 </div>
             </div>
             </ScrollAnimation>
             
-            <div className="cs__paperprototype cs__styleguide">
-                <h3>Design Style Guide <img src={DashAppraisal} /></h3>
-                <div className="cs__prototypecontainer">
-                    <div className="cs__pp1"><img src={styleGuide1} /></div>
-                </div>
-                <div className="cs__prototypecontainer">
-                    <div className="cs__pp1"><img src={styleGuide2} /></div>
-                </div>
-            </div>
-
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__wireframes">
                 <h3>Wireframes <img src={DashAppraisal} /></h3>
+                <p>While wireframing, I focused on a mobile-first content-creation experience that would allow any user to monitor and maintain the alarms efficiently. As this is a web application, it can be accessed through any device.</p>
                 <div className="cs__wireframecontainer wayside">
                     <div className="cs__pp1"><img src={WireFrame1} /></div>
                     <div className="cs__pp2"><img src={WireFrame2} /></div>
@@ -193,10 +185,23 @@ const Wayside = () => {
                 </div>
             </div>
             </ScrollAnimation>
+            
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
+            <div className="cs__paperprototype cs__styleguide">
+                <h3>Design Style Guide <img src={DashAppraisal} /></h3>
+                <p>There are a few predefined design style guides recommended by the company. Out of which one was finalized based on the client's requirements.</p>
+                <div className="cs__prototypecontainer">
+                    <div className="cs__pp1"><img src={styleGuide1} /></div>
+                </div>
+                <div className="cs__prototypecontainer">
+                    <div className="cs__pp1"><img src={styleGuide2} /></div>
+                </div>
+            </div>
+            </ScrollAnimation>
 
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__wireframes">
-                <h3>Visual Design <img src={DashAppraisal} /></h3>
+                <h3>Visual Designs <img src={DashAppraisal} /></h3>
                 <div className="cs__wireframecontainer wayside">
                     <div className="cs__pp1"><img src={VD1} /></div>
                     <div className="cs__pp2"><img src={VD2} /></div>
@@ -218,7 +223,7 @@ const Wayside = () => {
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__conclusion">
                 <h3>Conclusion <img src={DashAppraisal} /></h3>
-                <p>This application increased the efficiency of resolving alarms which led to lesser wayside equipment failures. The maintainer group could easily identify the fault location because of the integrated GPS in the application while the admin, back-office & supervisor group could easily track wayside inspector alarms online.</p>
+                <p>The client was happy with the work done in this project. This application increased the efficiency of resolving alarms which led to lesser wayside equipment failures. The maintainer group could easily identify the fault location because of the integrated GPS in the application while the admin, back-office & supervisor groups could easily track wayside inspector alarms online. The work turned the direction of the product towards the end-user. The web application was developed and deployed and currently being used in some parts of Europe.</p>
             </div>
             </ScrollAnimation>
             

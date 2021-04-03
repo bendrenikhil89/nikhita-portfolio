@@ -56,7 +56,7 @@ const GetReady = () => {
             </div>
             <div className="cs__overview">
                 <h3>Overview <img src={DashAppraisal} /></h3>
-                <p>The users want an intelligent shopping application that helps them by suggesting different buying options best suited to their product of choice. For example, when a user is buying a white shirt, this app will provide users with the different options to pair up with the selected white shirt. In other shopping apps, usually suggestion of similar clothing is shown, but Get Ready! will suggest what can be paired up to complete a perfect look.</p>
+                <p>The presentation of outfits on e-commerce websites and applications is very alluring. They show a perfect combination of tops and bottoms which is difficult for the users to find that perfect combination. The users have to spend a lot of time searching for matching clothing/accessories for their current buying option on the shopping app. An ideal solution would be to have a shopping app, intelligent enough to suggest the users matching clothing, accessories, footwear, etc. that can be bought together with the current option which the user is considering to buy to give the user a perfect look.</p>
             </div>
             </ScrollAnimation>
 
@@ -142,6 +142,7 @@ const GetReady = () => {
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__wireframes">
                 <h3>Wireframes <img src={DashAppraisal} /></h3>
+                <p>As majority of people use their mobile phones to browser internet and are familiar with mobile apps, mobile app design was targeted.</p>
                 <div className="cs__wireframecontainer getready">
                     <div className="cs__pp1"><img src={WireFrame1} /></div>
                     <div className="cs__pp2"><img src={WireFrame2} /></div>
@@ -153,7 +154,7 @@ const GetReady = () => {
 
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} duration={1}>
             <div className="cs__wireframes">
-                <h3>Visual Design <img src={DashAppraisal} /></h3>
+                <h3>Visual Designs <img src={DashAppraisal} /></h3>
                 <div className="cs__wireframecontainer getready">
                     <div className="cs__pp1"><img src={VD1} style={{background:'#efebe9'}} /></div>
                     <div className="cs__pp2"><img src={VD3} style={{background:'#efebe9'}} /></div>
